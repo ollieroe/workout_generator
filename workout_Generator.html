@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./random_Workout_Generator.css">
+        <title>Workout Generator</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Workout Generator</h1>
+            </div>
+            <div class="workoutSelector">
+                <div class="border">
+                    <h2>What would you like to workout?</h2>
+                    <button class="button-5" role="button"
+                        onclick="randomWorkout()">I'm Feeling Lucky</button>
+                    <br>
+                    <label for="back">Back</label>
+                    <input id="back" name="back" type="checkbox" />
+                    <br>
+                    <label for="biceps">Biceps</label>
+                    <input id="biceps" name="biceps" type="checkbox" />
+                    <br>
+                    <label for="chest">Chest</label>
+                    <input id="chest" name="chest" type="checkbox" />
+                    <br>
+                    <label for="legs_front">Legs - Front</label>
+                    <input id="legs_front" name="legs_front" type="checkbox" />
+                    <br>
+                    <label for="legs_back">Legs - Back</label>
+                    <input id="legs_back" name="legs_back" type="checkbox" />
+                    <br>
+                    <label for="shoulders">Shoulders</label>
+                    <input id="shoulders" name="shoulders" type="checkbox" />
+                    <br>
+                    <button class="button-5" role="button"
+                        onclick="workoutSelectors()">Submit</button>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h1>Here is your workout:</h1>
+                    <p id="presentWorkout"></p>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <a href="#top">To the top</a>
+                <script src="./workout_Generator.js"></script>
+                <script src="./wokroutSelector.js"></script>
+            </footer>
+        </div>
+    </body>
+
+</html>
